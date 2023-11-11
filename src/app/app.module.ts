@@ -7,12 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { IconsComponentTsComponent } from './icons.component.ts/icons.component.ts.component';
+import { WeatherHomeComponent } from './Modules/weather/page/weather-home/weather-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IconsComponentTsComponent
+    WeatherHomeComponent
   ],
   imports: [
     FormsModule,
