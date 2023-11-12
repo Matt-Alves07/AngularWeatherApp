@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WeatherHomeComponent } from './Modules/weather/page/weather-home/weather-home.component';
+import { WeatherCardComponent } from './Modules/weather/components/weather-card/weather-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherHomeComponent
+    WeatherHomeComponent,
+    WeatherCardComponent
   ],
   imports: [
     FormsModule,

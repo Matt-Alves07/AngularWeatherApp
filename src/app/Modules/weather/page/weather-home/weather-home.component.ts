@@ -1,8 +1,8 @@
 import { Subject, takeUntil } from 'rxjs';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { WeatherService } from '../../services/weather.service';
-import { WeatherData } from 'src/app/Models/Interfaces/weather.inteface';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { WeatherData } from 'src/app/Models/Interfaces/weather.inteface';
 
 @Component({
   selector: 'app-weather-home',
@@ -32,10 +32,7 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
     this.weatherService.getWeatherData(cityName)
       .pipe(takeUntil(this.destroy$))
       .subscribe({
-        next: (response) => {
-          response && (this.weatherData = response);
-          console.log(this.weatherData);
-        },
+        next: (response) => { response && (this.weatherData = response); },
         error: (error) => console.log(error),
       });
   }

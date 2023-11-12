@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'Weather web app';
-  faLocationDot = faLocationDot;
 }
